@@ -1,8 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
-int *input(int n)
+int *input(int a[], int n)
 {
-    int *a = new int[n];
     for (int i = 0; i < n; i++)
     {
         cin >> a[i];
@@ -13,7 +12,8 @@ int main()
 {
     int n;
     cin >> n;
-    int *a = input(n);
+    int *a = new int[n];
+    input(a,n);
     for (int i = 0; i < n; i++)
     {
         cout << a[i] << " ";
